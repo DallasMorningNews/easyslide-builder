@@ -1,0 +1,53 @@
+#wrapper {
+	max-width: 1000px;
+	width: 95%;
+	margin: 0 auto 50px;
+
+}
+
+h5 {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: bold;
+	margin-top: 30px;
+}
+
+textarea, input {
+	width: 100%;
+}
+
+.important {
+	font-weight: bold;
+	color: red;
+}
+
+.note {
+	margin-top: 30px;
+}
+
+.button {
+	width: 200px;
+}
+
+.shortInput {
+	max-width: 400px;
+}
+
+.blockInput {
+	max-width: 400px;
+}
+
+code {
+	display: block;
+	margin-bottom: 6px;
+}
+
+.output {
+	margin-top: 20px;
+	display: block;
+	width: 100%;
+	min-height: 300px;
+	background-color: rgb(245,245,245);
+	border: 1px solid rgb(235,235,235);
+	padding: 10px;
+}

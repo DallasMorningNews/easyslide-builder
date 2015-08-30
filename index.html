@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Easy Slide: Interactive Slideshows Made Easy</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+	<div id="wrapper">
+
+		<h1>Easy Slide: Interactive Slideshows Made Easy</h1>
+
+		<h4>Quick question: Have you downloaded the newest interactives template from github? If not, you may not have the latest styles or scripts to make slideshows awesome. Get the latest version <a href="https://github.com/DallasMorningNews/interactives_starterkit">here</a>.</h4>
+
+		<p>For your slideshow to function properly, there are two lines of code you need to delete in the customJS.js file in the "js" folder of your project folder.  Delete these two lines, found on or around line 21 and line 124:</p>
+
+		<code>/* DELETE THIS ENTIRE LINE FOR SLIDESHOW USE</code>
+
+		<code>DELETE THIS ENTIRE LINE ALSO FOR SLIDESHOW USE */</code>
+
+		<form id="easySlide">
+
+			<h5>Title of your slideshow</h5>
+			<input class="required shortInput" type="text" id="slideTitle" placeholder="Enter the title slideshow here" value="">
+
+			<h5>Number of slides</h5>
+			<input class="required shortInput" type="text" id="slideCounter" placeholder="Ex: 6" value="" >
+
+
+
+			<h5>Image names</h5>
+			<p>Enter the file name of your images, leaving off any size suffix that a tool like Shrinkray may have added. For example, if your file name is <em>image1_1800.jpg</em>, just enter <em>image1</em>. <span class="important">Separate the names by a comma.</span> You should have as many image names as you have number of slides.</p>
+			<textarea class="required blockInput" rows="5" type="text" id="imageNames" placeholder="Ex: image1,image2,image3 (comma seperated, no spaces after comma)" value=""></textarea>
+
+			<h5>Image sizes</h5>
+			<p>Enter the sizes of your images here, largest to smallest. <span class="important">Again, separate the sizes by a comma. Also, only the size is needed, not the unit of measurement.</p>
+			<input class="required shortInput" type="text" id="imageSizes" placeholder="Ex: 2400,1800,1200,600 (comma seperated, no spaces after comma)" value="">
+
+
+			<div id="cutlines"></div>
+
+			<p class="note">Note: You still need to fill in your alt text and cutline info for each slide. Don't forget to do this.</p>
+
+
+			<input class="button" type="button" id="submitButton" value="Yo! Get my code!">
+
+		</form>
+
+		<span class="output">Your code will display here.</span>
+
+	</div>
+
+<script type="text/javascript" src="js/easySlide.js"></script>
+
+</body>
+
+</html>
